@@ -41,7 +41,6 @@ export default function SlideCanvas({ readOnly = false }) {
   const updateElement = usePresentationStore((s) => s.updateElement);
   const addElement = usePresentationStore((s) => s.addElement);
   const zoom = usePresentationStore((s) => s.zoom);
-  const showGrid = usePresentationStore((s) => s.showGrid);
   const showGuides = usePresentationStore((s) => s.showGuides);
   const tool = usePresentationStore((s) => s.tool);
 
@@ -192,26 +191,6 @@ export default function SlideCanvas({ readOnly = false }) {
             strokeWidth={1 / scale}
             listening={false}
           />
-          {showGrid &&
-            Array.from({ length: Math.ceil(slideWidth / 40) }).map((_, i) => (
-              <Line
-                key={`gv-${i}`}
-                points={[i * 40, 0, i * 40, slideHeight]}
-                stroke="#e2e8f0"
-                strokeWidth={0.5}
-                listening={false}
-              />
-            ))}
-          {showGrid &&
-            Array.from({ length: Math.ceil(slideHeight / 40) }).map((_, i) => (
-              <Line
-                key={`gh-${i}`}
-                points={[0, i * 40, slideWidth, i * 40]}
-                stroke="#e2e8f0"
-                strokeWidth={0.5}
-                listening={false}
-              />
-            ))}
         </Layer>
 
         <Layer>
