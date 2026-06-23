@@ -28,7 +28,6 @@ const usePresentationStore = create((set, get) => ({
   selectedElementIds: [],
   mode: 'edit',
   zoom: 1,
-  showGrid: false,
   showGuides: true,
   tool: 'select',
   history: [],
@@ -93,8 +92,6 @@ const usePresentationStore = create((set, get) => ({
   setZoom: (zoom) => set({ zoom: Math.max(0.25, Math.min(2, zoom)) }),
 
   setTool: (tool) => set({ tool }),
-
-  setShowGrid: (showGrid) => set({ showGrid }),
 
   setShowGuides: (showGuides) => set({ showGuides }),
 

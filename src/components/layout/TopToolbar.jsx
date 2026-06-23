@@ -17,7 +17,6 @@ import {
   AlignCenterVertical,
   AlignEndVertical,
   Layers,
-  Grid3x3,
   Magnet,
   ZoomIn,
   ZoomOut,
@@ -58,8 +57,6 @@ export default function TopToolbar() {
   const getActiveSlide = usePresentationStore((s) => s.getActiveSlide);
   const updateElements = usePresentationStore((s) => s.updateElements);
   const updateElement = usePresentationStore((s) => s.updateElement);
-  const showGrid = usePresentationStore((s) => s.showGrid);
-  const setShowGrid = usePresentationStore((s) => s.setShowGrid);
   const showGuides = usePresentationStore((s) => s.showGuides);
   const setShowGuides = usePresentationStore((s) => s.setShowGuides);
   const zoom = usePresentationStore((s) => s.zoom);
@@ -206,7 +203,6 @@ export default function TopToolbar() {
           <ToolbarDivider />
 
           <ToolbarGroup label="View">
-            <IconButton icon={Grid3x3} label="Toggle grid" active={showGrid} onClick={() => setShowGrid(!showGrid)} />
             <IconButton icon={Magnet} label="Toggle snap guides" active={showGuides} onClick={() => setShowGuides(!showGuides)} />
             <IconButton icon={ZoomOut} label="Zoom out" onClick={() => setZoom(zoom - 0.1)} />
             <span className="top-toolbar__zoom">{Math.round(zoom * 100)}%</span>
