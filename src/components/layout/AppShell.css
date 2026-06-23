@@ -1,0 +1,26 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.app-shell__body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.app-shell__canvas {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .app-shell__body {
+    flex-direction: column;
+  }
+}

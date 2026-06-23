@@ -1,0 +1,23 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--status-height);
+  padding: 0 12px;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  font-size: 11px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.status-bar__center {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .status-bar__center {
+    display: none;
+  }
+}

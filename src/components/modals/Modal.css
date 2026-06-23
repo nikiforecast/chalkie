@@ -1,0 +1,133 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 24px;
+}
+
+.modal {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 480px;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.modal__header h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.modal__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+}
+
+.modal__close:hover {
+  background: var(--color-bg);
+}
+
+.modal__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal__description {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.modal__options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.export-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-align: left;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.export-option:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  background: var(--color-primary-light);
+}
+
+.export-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.export-option strong {
+  font-size: 14px;
+}
+
+.export-option span {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.share-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+}
+
+.share-link input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.share-collaborators {
+  display: flex;
+  gap: 8px;
+  padding: 12px;
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}

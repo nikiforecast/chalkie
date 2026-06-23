@@ -1,0 +1,13 @@
+.toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.toolbar-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--color-border);
+  margin: 0 6px;
+  flex-shrink: 0;
+}

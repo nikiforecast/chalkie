@@ -1,0 +1,84 @@
+.top-toolbar {
+  display: flex;
+  align-items: center;
+  height: var(--toolbar-height);
+  padding: 0 12px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  gap: 12px;
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.top-toolbar__section {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.top-toolbar__section--brand {
+  min-width: 200px;
+}
+
+.top-toolbar__section--tools {
+  flex: 1;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.top-toolbar__section--actions {
+  margin-left: auto;
+}
+
+.top-toolbar__logo {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+}
+
+.top-toolbar__title {
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text);
+  background: transparent;
+  min-width: 140px;
+  max-width: 220px;
+}
+
+.top-toolbar__title:hover {
+  border-color: var(--color-border);
+}
+
+.top-toolbar__title:focus {
+  border-color: var(--color-primary);
+  outline: none;
+  background: var(--color-surface);
+}
+
+.top-toolbar__zoom {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  min-width: 36px;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .top-toolbar__section--brand {
+    min-width: auto;
+  }
+
+  .top-toolbar__title {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-toolbar__section--tools {
+    display: none;
+  }
+}
