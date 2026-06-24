@@ -82,14 +82,14 @@ export default function SlideThumbnails() {
             onClick={() => setActiveSlideIndex(index)}
           >
             <div className="slide-thumbnail__grip" aria-hidden="true">
-              <GripVertical size={12} />
+              <GripVertical size={10} />
             </div>
             <span className="slide-thumbnail__number">{index + 1}</span>
             <div className="slide-thumbnail__preview">
               <ThumbnailPreview
                 slide={slide}
-                width={168}
-                height={94}
+                width={148}
+                height={83}
                 slideWidth={slideWidth}
                 slideHeight={slideHeight}
               />
