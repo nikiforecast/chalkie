@@ -1,4 +1,5 @@
 import { v4 as uuid } from 'uuid';
+import { DEFAULT_FONT } from './fonts';
 
 function textElement(overrides = {}) {
   return {
@@ -12,7 +13,7 @@ function textElement(overrides = {}) {
     zIndex: 1,
     text: 'Click to edit text',
     fontSize: 24,
-    fontFamily: 'Inter',
+    fontFamily: DEFAULT_FONT,
     fontWeight: 'normal',
     fontStyle: 'normal',
     textDecoration: '',
