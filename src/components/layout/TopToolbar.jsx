@@ -22,7 +22,7 @@ import {
   ZoomOut,
   Play,
   Share2,
-  Download,
+  Upload,
   FilePlus,
   Bold,
   Italic,
@@ -218,7 +218,7 @@ export default function TopToolbar() {
             <Share2 size={16} /> Share
           </Button>
           <Button variant="ghost" onClick={() => setShowExport(true)}>
-            <Download size={16} /> Export
+            <Upload size={16} /> Export
           </Button>
           <Button variant="primary" onClick={() => setMode('present')}>
             <Play size={16} /> Present
