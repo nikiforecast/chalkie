@@ -1,9 +1,14 @@
-import AppShell from './components/layout/AppShell';
-import useKeyboardShortcuts from './hooks/useKeyboardShortcuts';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import EditorApp from './EditorApp';
+import DesignSystemPage from './pages/DesignSystemPage';
 
-function App() {
-  useKeyboardShortcuts();
-  return <AppShell />;
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/design-system" element={<DesignSystemPage />} />
+        <Route path="*" element={<EditorApp />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App;

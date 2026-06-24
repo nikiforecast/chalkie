@@ -7,11 +7,11 @@
 }
 
 .properties-panel__section {
-  padding: 16px;
+  padding: var(--space-s);
   border-bottom: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--space-sm);
 }
 
 .properties-panel__heading {
@@ -25,7 +25,7 @@
 .properties-panel__field {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--space-xxs);
 }
 
 .properties-panel__label {
@@ -39,7 +39,7 @@
 .properties-panel__field input,
 .properties-panel__inline-inputs input {
   height: 32px;
-  padding: 0 8px;
+  padding: 0 var(--space-xs);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);
@@ -47,7 +47,7 @@
 }
 
 .properties-panel__textarea {
-  padding: 8px;
+  padding: var(--space-xs);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);
@@ -66,13 +66,13 @@
 .properties-panel__inline-inputs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: var(--space-xs);
 }
 
 .properties-panel__inline-inputs label {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--space-xxs);
   font-size: 11px;
   color: var(--color-text-muted);
 }
@@ -107,11 +107,11 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--space-xs);
 }
 
 .properties-panel__comment {
-  padding: 8px;
+  padding: var(--space-xs);
   background: var(--color-bg);
   border-radius: var(--radius-md);
   font-size: 12px;
@@ -119,12 +119,12 @@
 
 .properties-panel__comment strong {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: var(--space-xxs);
 }
 
 .properties-panel__comment p {
   color: var(--color-text-secondary);
-  margin-bottom: 4px;
+  margin-bottom: var(--space-xxs);
 }
 
 .properties-panel__comment time {

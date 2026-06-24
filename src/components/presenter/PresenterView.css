@@ -10,8 +10,8 @@
 .presenter-view__main {
   display: flex;
   flex-direction: column;
-  padding: 24px;
-  gap: 16px;
+  padding: var(--space-m);
+  gap: var(--space-s);
 }
 
 .presenter-view__slide {
@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: var(--space-s);
 }
 
 .presenter-view__controls .icon-btn {
@@ -47,7 +47,7 @@
 .presenter-view__notes {
   background: #1e293b;
   border-left: 1px solid #334155;
-  padding: 24px;
+  padding: var(--space-m);
   overflow-y: auto;
   color: #e2e8f0;
 }
@@ -57,7 +57,7 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: #94a3b8;
-  margin-bottom: 12px;
+  margin-bottom: var(--space-sm);
 }
 
 .presenter-view__notes p {
@@ -66,8 +66,8 @@
 }
 
 .presenter-view__next {
-  margin-top: 32px;
-  padding-top: 24px;
+  margin-top: var(--space-l);
+  padding-top: var(--space-m);
   border-top: 1px solid #334155;
 }
 
@@ -76,7 +76,7 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: #64748b;
-  margin-bottom: 8px;
+  margin-bottom: var(--space-xs);
 }
 
 .presenter-view__next p {

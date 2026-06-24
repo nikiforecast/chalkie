@@ -2,10 +2,10 @@
   display: flex;
   align-items: center;
   height: var(--toolbar-height);
-  padding: 0 12px;
+  padding: 0 var(--space-sm);
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
-  gap: 12px;
+  gap: var(--space-sm);
   flex-shrink: 0;
   overflow-x: auto;
 }
@@ -41,7 +41,7 @@
 .top-toolbar__title {
   border: 1px solid transparent;
   border-radius: var(--radius-md);
-  padding: 4px 8px;
+  padding: var(--space-xxs) var(--space-xs);
   font-size: 13px;
   font-weight: 500;
   color: var(--color-text);

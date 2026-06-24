@@ -1,0 +1,107 @@
+.design-system {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.design-system__nav {
+  width: 240px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--color-border);
+  background: var(--color-surface);
+  overflow-y: auto;
+}
+
+.design-system__nav-inner {
+  padding: var(--space-m) var(--space-s);
+  position: sticky;
+  top: 0;
+}
+
+.design-system__back {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.design-system__back:hover {
+  color: var(--color-primary);
+}
+
+.design-system__heading {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+
+.design-system__intro {
+  margin-top: var(--space-xs);
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+.design-system__toc {
+  margin-top: var(--space-m);
+}
+
+.design-system__toc ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.design-system__toc-link {
+  display: block;
+  padding: var(--space-xs) 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.design-system__toc-link:hover {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.design-system__main {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-l) var(--space-xl) 64px;
+  max-width: 900px;
+}
+
+@media (max-width: 768px) {
+  .design-system {
+    flex-direction: column;
+  }
+
+  .design-system__nav {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .design-system__nav-inner {
+    position: static;
+  }
+
+  .design-system__toc ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .design-system__main {
+    padding: var(--space-m) var(--space-s) 48px;
+  }
+}
