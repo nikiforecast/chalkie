@@ -7,8 +7,8 @@ export const THEMES = {
     accent: '#0ea5e9',
     background: '#ffffff',
     text: '#0f172a',
-    headingFont: 'Inter',
-    bodyFont: 'Inter',
+    headingFont: 'Quicksand',
+    bodyFont: 'Quicksand',
   },
   midnight: {
     id: 'midnight',
@@ -18,8 +18,8 @@ export const THEMES = {
     accent: '#c084fc',
     background: '#0f172a',
     text: '#f8fafc',
-    headingFont: 'Inter',
-    bodyFont: 'Inter',
+    headingFont: 'Quicksand',
+    bodyFont: 'Quicksand',
   },
   forest: {
     id: 'forest',
@@ -30,7 +30,7 @@ export const THEMES = {
     background: '#f0fdf4',
     text: '#14532d',
     headingFont: 'Georgia',
-    bodyFont: 'Inter',
+    bodyFont: 'Quicksand',
   },
   sunset: {
     id: 'sunset',
@@ -41,7 +41,7 @@ export const THEMES = {
     background: '#fffbeb',
     text: '#431407',
     headingFont: 'Georgia',
-    bodyFont: 'Inter',
+    bodyFont: 'Quicksand',
   },
   corporate: {
     id: 'corporate',
@@ -51,12 +51,13 @@ export const THEMES = {
     accent: '#0284c7',
     background: '#f8fafc',
     text: '#1e293b',
-    headingFont: 'Inter',
-    bodyFont: 'Inter',
+    headingFont: 'Quicksand',
+    bodyFont: 'Quicksand',
   },
 };
 
 export const FONT_LIBRARY = [
+  'Quicksand',
   'Inter',
   'Georgia',
   'Times New Roman',

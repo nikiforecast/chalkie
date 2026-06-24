@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import { Stage, Layer, Rect, Line, Transformer } from 'react-konva';
+import { DEFAULT_FONT } from '../../constants/fonts';
 import usePresentationStore from '../../store/usePresentationStore';
 import SlideElement from './SlideElement';
 import TextEditor from './TextEditor';
@@ -144,7 +145,7 @@ export default function SlideCanvas({ readOnly = false }) {
       height: 50,
       text: 'New text',
       fontSize: 24,
-      fontFamily: 'Inter',
+      fontFamily: DEFAULT_FONT,
       fontWeight: 'normal',
       fontStyle: 'normal',
       textDecoration: '',
