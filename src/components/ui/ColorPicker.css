@@ -1,7 +1,7 @@
 .color-picker {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--space-xxs);
 }
 
 .color-picker__label {
@@ -15,9 +15,9 @@
 .color-picker__input {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--space-xs);
   height: 32px;
-  padding: 0 8px;
+  padding: 0 var(--space-xs);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);

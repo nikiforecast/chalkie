@@ -16,6 +16,14 @@
   --color-success: #22c55e;
   --color-warning: #f59e0b;
 
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 40px;
+
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 8px;

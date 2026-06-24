@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  padding: 24px;
+  padding: var(--space-m);
 }
 
 .modal {
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 20px;
+  padding: var(--space-s) 20px;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -50,7 +50,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--space-s);
 }
 
 .modal__description {
@@ -62,14 +62,14 @@
 .modal__footer {
   display: flex;
   justify-content: flex-end;
-  gap: 8px;
-  padding-top: 8px;
+  gap: var(--space-xs);
+  padding-top: var(--space-xs);
 }
 
 .modal__options {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: var(--space-xs);
 }
 
 .export-option {
@@ -77,7 +77,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
-  padding: 12px 16px;
+  padding: var(--space-sm) var(--space-s);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   text-align: left;
@@ -106,8 +106,8 @@
 .share-link {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-bg);
@@ -123,8 +123,8 @@
 
 .share-collaborators {
   display: flex;
-  gap: 8px;
-  padding: 12px;
+  gap: var(--space-xs);
+  padding: var(--space-sm);
   background: var(--color-bg);
   border-radius: var(--radius-md);
   font-size: 12px;
